@@ -1,3 +1,9 @@
 {
-  "schedules": []
+  "schedules": [
+    {
+      "id": 1729726998208,
+      "name": "Amilton Castro",
+      "when": "2024-10-24T10:00:00.000Z"
+    }
+  ]
 }
