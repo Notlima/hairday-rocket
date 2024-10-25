@@ -9,9 +9,9 @@ const periodNight = document.getElementById("period-night")
 export function schedulesShow({dailySchedules}){
   try {
     //Limpa as listas.
-    periodMorning.innerHTML = " "
-    periodAfternoon.innerHTML = " "
-    periodNight.innerHTML = " "
+    periodMorning.innerHTML = ""
+    periodAfternoon.innerHTML = ""
+    periodNight.innerHTML = ""
 
     //Renderiza os agendamentos por periodo.
     dailySchedules.forEach((schedule) => {
@@ -41,7 +41,7 @@ export function schedulesShow({dailySchedules}){
       if(hour <= 12){
         periodMorning.appendChild(item)
       } else if( hour > 12 && hour <= 18){
-        periodAfternoon.appendChild()
+        periodAfternoon.appendChild(item)
       } else {
         periodNight.appendChild(item)
       }
@@ -49,6 +49,6 @@ export function schedulesShow({dailySchedules}){
     
   } catch (error) {
     console.log(error)
-    alert("Não foi possível exiber os agendamentos!")
+    alert("Não foi possível exibir os agendamentos!")
   }
 }

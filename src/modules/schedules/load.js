@@ -5,7 +5,7 @@ import { hoursLoad } from "../form/hours-load.js"
 //Seleciona o input de data.
 const selectDate = document.getElementById("date")
 
-export async function scheduleDay(){
+export async function schedulesDay(){
   //Obtém a data do input
   const date = selectDate.value
 

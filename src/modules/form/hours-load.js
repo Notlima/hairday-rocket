@@ -1,7 +1,7 @@
 import dayjs from "dayjs"
 import { openingHours } from "../../utils/opening-hours.js"
 import { hoursClick } from "./hours-click.js"
-import { scheduleDay } from "../schedules/load.js"
+import { schedulesDay } from "../schedules/load.js"
 
 const hours = document.getElementById("hours")
 
